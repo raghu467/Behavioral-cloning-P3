@@ -141,8 +141,7 @@ def save_model(model, model_name='model.json', weights_name='model.h5'):
     json_string = model.to_json()
     with open(model_name, 'w') as outfile:
         json.dump(json_string, outfile) # save the model
-    model.save("my_model.h5")
-    model.save_weights(weights_name) # save the weights
+    model.save(weights_name)
 
 def delete_file(file):
 
