@@ -5,8 +5,8 @@ In this project  we train the Deep Neural Network  to clone human driving behavi
 ## Dataset Statistics
 The training dataset contains 8600 images also the  training track contains a lot of straight roads and shallow turns. since we have lot of stright roads in the simulator the majority steering angles are zeros. 
 To normalize this training data we use the following pipeline to pre-process the images and steering angles before training the Neural network.
-The following is the distribution of the steering angle in the training data set collected.
-![alt tag](https://github.com/raghu467/Behavioral-cloning-P3/blob/master/Readme_images/steering_distribution.png)
+The following is the distribution of the steering angle in the training data set collected.<br>
+![alt tag](https://github.com/raghu467/Behavioral-cloning-P3/blob/master/Readme_images/steering_distribution.png)<br>
 
 It is evident from the distribution plot above that  most of the training data captured has steerng angle 0. to improve this data distribution we apply random shearing to the training images and the corresponding steering angles. Also random shearing helps to reduce the impact of the image data out-side the road on the training.
 
